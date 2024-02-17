@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:math';
 void main(){
   passwordGenerator();
@@ -7,7 +6,6 @@ void main(){
 
 
 void passwordGenerator(){
-
   List<String> charactersList = [
     'a','b','c', 'd', 'e', 'f', 'g', 'h', 'i',
     'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
@@ -31,26 +29,5 @@ void passwordGenerator(){
 
 
 
-
-void greet(){
-  stdout.write("Enter name: ");
-  String? name = stdin.readLineSync();
-  print("Hello $name!!");
-}
-
-
-
-
-
-void even(){
-  for(int i = 190; i <=200; i++ ){
-    int result = i % 2;
-    if(result == 0){
-      print(i);
-    }else{
-      continue;
-    };
-  };
-}
 
 
