@@ -1,9 +1,7 @@
 import 'dart:math';
 void main(){
   passwordGenerator();
-  
 }
-
 
 void passwordGenerator(){
   List<String> charactersList = [
@@ -13,18 +11,14 @@ void passwordGenerator(){
     'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
     'Z','1', '2', '3', '4', '5', '6', '7', '8', '9', '0','!', '@', '#', "%", '&', '-'
   ];
-
-  
   
   Random random = Random(); //
   String pasWrd = ''; 
   for(int i = 0; i < 8; i++){
-     pasWrd += charactersList[random.nextInt(charactersList.length)];
-     
-           
+     pasWrd += charactersList[random.nextInt(charactersList.length)];      
   };
-  print(pasWrd);
   
+  print(pasWrd);
 }
 
 
